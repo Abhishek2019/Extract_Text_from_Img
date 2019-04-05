@@ -1,0 +1,84 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<!-- <div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+  
+  <img width="300" alt="selected Img" src="data:image/JPG;base64,{{imageData}}"
+  onError="this.src='../assets/images/placeholder_1.jpg';"
+  >
+  <br><br>
+  <textarea rows="4" cols="50" [(ngModel)]="inputText" >
+  </textarea>
+  <br><br>
+  <input type='file' (change)="selectFile($event)"  class = "chooseFileClass" >
+  <br><br>
+  <button class = "buttonClass" type="button" (click)="sendString()">Extract Text</button>
+  
+</div> -->
+
+<!-- <input type="text" [(ngModel)]="inputText" placeholder="enter text"> -->
+
+
+<div class="bodywrap">
+  <section>
+    <div class="wave"></div>
+  </section>
+
+</div>
+
+
+<br><br>
+<div class="content">
+  <h1 data-text="Text Recognition">Object Text Recognition</h1>
+
+  <div class="shift">
+
+    <div id="showLeft">
+    <img width="60%" alt="selected Img" src="data:image/JPG;base64,{{imageData}}"
+    onError="this.src='../assets/images/placeholder_2.png';"
+    height="250px"
+    width="300px"
+    >
+
+    <label for="file-upload" class="custom-file-upload btn-hover color-8">
+        <i class="fas fa-cloud-upload-alt"></i> Custom Upload
+      </label>
+      <input id="file-upload" (change)="selectFile($event)" type="file"/>
+      <!-- <br><br> -->
+      <button class = "buttonClass" type="button" (click)="sendString()">Extract Text</button>
+    </div>
+
+    <div class="inputOutputArea">
+    <textarea id = "textarea_1" placeholder="Enter Your Text" cols="20" rows="3" [(ngModel)]="inputText" > </textarea>
+
+    <div id="outputContainer">
+      <b>Orignal Text : {{ orignalText }} </b> <br>
+      <b>Current Text : {{ currentText }}</b><br>
+      <b>status : {{ status }}</b><br>
+      <b>accuracy : {{  accuracy  }}</b>
+      
+    </div>
+
+    </div>
+
+    <!-- <br><br> -->
+
+  </div>
+</div>
+
+
+
+<!-- <div class="buttons">
+  <button class="btn-hover color-1">BUTTON</button>
+  <button class="btn-hover color-2">BUTTON</button>
+  <button class="btn-hover color-3">BUTTON</button>
+  <button class="btn-hover color-4">BUTTON</button>
+  <button class="btn-hover color-5">BUTTON</button>
+  <button class="btn-hover color-6">BUTTON</button>
+  <button class="btn-hover color-7">BUTTON</button>
+  <button class="btn-hover color-8" (click)="sendString()">Send String</button>
+  <button class="btn-hover color-9">BUTTON</button>
+  <button class="btn-hover color-10">BUTTON</button>
+  <button class="btn-hover color-11">BUTTON</button>
+</div> -->
