@@ -28,6 +28,7 @@ export class AppComponent {
   selectFile(event){
     var files = event.target.files;
     var file = files[0];
+    
 
   if (files && file) {
       var reader = new FileReader();

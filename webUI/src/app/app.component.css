@@ -173,7 +173,8 @@ img{
   section{
     width: 100%;
     height: 100vh;
-    background-image:linear-gradient(rgba(62, 59, 117, 0.8),rgba(29, 28, 29, 0.7)),url(../assets/images/back.jpg);
+    background-image:linear-gradient(to right,#0F2027,#203a43,
+    #2c5364),url(../assets/images/back.jpg);
     background-size: cover;
     background-attachment:fixed;
   }
@@ -290,7 +291,17 @@ img{
     cursor: pointer; */
     margin: 10%;
     text-align: center;
-    padding: 14px 12px;
+    padding: 14px 15px;
     font-size: 18px;
   
+  }
+
+  .choose{
+    padding-top: 50px;  
+    margin-left: -120px;
+  }
+  
+  .butext{
+    padding-top: 50px;
+    margin-left: -80px;
   }

@@ -41,12 +41,16 @@
     width="300px"
     >
 
-    <label for="file-upload" class="custom-file-upload btn-hover color-8">
-        <i class="fas fa-cloud-upload-alt"></i> Custom Upload
+    <div class="choose">
+      <label for="file-upload" class="custom-file-upload btn-hover color-9 ">
+        <i class="fas fa-cloud-upload-alt"></i> Upload Image
       </label>
       <input id="file-upload" (change)="selectFile($event)" type="file"/>
+    </div>
       <!-- <br><br> -->
+     <div class="butext">
       <button class = "buttonClass" type="button" (click)="sendString()">Extract Text</button>
+     </div>
     </div>
 
     <div class="inputOutputArea">

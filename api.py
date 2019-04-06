@@ -26,9 +26,9 @@ class ExtractImg(Resource):
         img_data = req_data["img"]
         inputText = req_data["inputText"]
         inputText = inputText.lower()
-
-        print(req_data)
-        print(inputText)
+        # print(img_data)
+        # print(req_data)
+        # print(inputText)
 
         img_data = (str.encode(img_data))
 
@@ -68,14 +68,29 @@ class ExtractImg(Resource):
             listTxt = list(txt)
 
             matchCount = 0
-            totalCount = len(listInput)
-            for i in range(len(listInput)):
+            listTemp1 = []
+            listTemp2 = []
+            if(len(listInput) >= len(listTxt)):
+                totalCount = len(listInput)
+                listTemp1 = listInput
+                listTemp2 = listTxt
+            else:
+                totalCount = len(listTxt)
+                listTemp1 = listTxt
+                listTemp2 = listInput
 
-                if( i < len(listTxt)   and listInput[i] == listTxt[i]):
+
+            for i in range(len(listTemp1)):
+
+                if( i < len(listTemp2)   and listTemp1[i] == listTemp2[i]):
                     matchCount+=1
+
 
             accuracy = (matchCount/totalCount)*100
             method.append(accuracy)
+
+            print(matchCount)
+            print(totalCount)
 
         accuracy = 0
         status = ""
@@ -87,7 +102,7 @@ class ExtractImg(Resource):
             accuracy = methods[1][2]
             currentTxt = methods[1][1]
 
-        if( len(listInput) == len(listTxt) and int(accuracy) == 100):
+        if(int(accuracy) == 100):
             status = "matched !!"
         else:
             status = "not matched"
