@@ -3,7 +3,7 @@
 
 ## Getting Started
 
-For Object Character Recognition,  Package used :
+For Object Character Recognition, install Tesseract module:
 * [Tesseract](https://github.com/tesseract-ocr/tesseract/wiki) - *Tesseract is an optical character recognition engine for various operating systems.
  
 
