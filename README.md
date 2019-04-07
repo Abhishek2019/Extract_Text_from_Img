@@ -46,7 +46,7 @@ http://localhost: 4200
 
 ## Screenshots
 ### OCR
-https://user-images.githubusercontent.com/31566305/55680109-c4c05580-5947-11e9-86d0-d7de71805242.png
+![image](https://user-images.githubusercontent.com/31566305/55680109-c4c05580-5947-11e9-86d0-d7de71805242.png)
 
 
 
