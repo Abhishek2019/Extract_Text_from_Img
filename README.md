@@ -24,7 +24,7 @@ git clone https://github.com/Abhishek2019/Extract_Text_from_Img.git
 
 ## Angular Installation
 
-*Installing Angular CLI version 6
+*Installing Angular CLI version 6*
 ```
 npm install -g @angular/cli@6
 ```
